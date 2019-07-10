@@ -2,7 +2,22 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <div th:insert="base :: header"></div>
+    <!--<div th:insert="base :: header"></div>-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Our Class Webpage</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Belgrano|Flamenco&display=swap" rel="stylesheet">
+    <!--My CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <!--Leave this as a comment: The style information is in a separate file called style.css-->
 
@@ -22,7 +37,25 @@
 
 <div class="container" style="background-color: burlywood">
     <!-- Navigation bar-->
-    <div th:insert="base :: navbar"></div>
+    <!--<div th:insert="base :: navbar"></div>-->
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills float-left">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="jumbotron">
         <h1 class="display-4">Did you find all your tag pairs?</h1>
